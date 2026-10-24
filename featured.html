@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get featured on BotAtlas: founding spots for AI tool makers</title>
+<meta name="description" content="Put your AI tool at the top of its category on BotAtlas with a pinned Featured card. Founding early-access pricing from $49/month. Ask about a spot, no payment taken online.">
+<link rel="canonical" href="https://tchal453.github.io/botatlas/featured.html">
+<meta name="theme-color" content="#0b0d17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BotAtlas">
+<meta property="og:title" content="Get featured on BotAtlas">
+<meta property="og:description" content="A pinned Featured card at the top of your category. Founding early-access pricing from $49/month.">
+<meta property="og:url" content="https://tchal453.github.io/botatlas/featured.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="w">
+<nav aria-label="Main">
+  <a class="logo" href="./">🧭 Bot<span>Atlas</span></a>
+  <div class="l">
+    <a href="./#personas">Bots</a>
+    <a href="./#tools">Tools</a>
+    <a href="./#stacks">Stacks</a>
+  </div>
+  <a class="btn" href="#apply">Ask about a spot</a>
+</nav>
+
+<main id="main">
+<section class="hero">
+  <span class="badge f">★ For AI tool makers</span>
+  <h1 style="margin-top:14px">Get featured on <em>BotAtlas</em></h1>
+  <p class="sub">BotAtlas helps people pick the right AI tool and bot for what they're building. A Featured spot puts your tool first in its category, clearly labelled.</p>
+  <a class="btn" href="#apply">Ask about a founding spot →</a>
+</section>
+
+<section aria-labelledby="what">
+  <h2 id="what">What you get</h2>
+  <div class="g3">
+    <div class="card"><span class="badge f">Pinned</span><h3 class="n">Top of your category</h3><p>Your card sits first in its category and in the Featured slot on the homepage.</p></div>
+    <div class="card"><span class="badge f">Badge</span><h3 class="n">Clear “Featured” label</h3><p>A gold Featured badge, so readers know it's a placement. We don't disguise ads.</p></div>
+    <div class="card"><span class="badge f">Stacks</span><h3 class="n">Matched to personas</h3><p>Where it honestly fits, we suggest your tool alongside the bot personas and stacks it works with.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="pricing">
+  <h2 id="pricing">Founding pricing</h2>
+  <div class="g2">
+    <div class="card">
+      <span class="badge f">Early access · founding price</span>
+      <div class="price" style="margin-top:10px">$49 <small>USD / month per category</small></div>
+      <ul class="ticks">
+        <li>Pinned Featured card at the top of one category</li>
+        <li>Rotation in the homepage Featured slot</li>
+        <li>Cancel any time</li>
+        <li>Founding price locked for as long as you stay</li>
+      </ul>
+      <p style="font-size:13px">BotAtlas is new, and this is early-access founding pricing. It will go up as traffic grows. We only take a small number of featured tools per category.</p>
+    </div>
+    <div class="card">
+      <h3 class="n">How it works</h3>
+      <ul class="ticks">
+        <li>Send the form below. Nothing is charged.</li>
+        <li>We check the tool is real, working and a fit for the directory.</li>
+        <li>We reply by email with an open category and a start date.</li>
+        <li>You pay only after you've seen exactly what the card looks like.</li>
+      </ul>
+      <p style="font-size:13px">Featured placement never buys a better description or a fake review. Listings stay accurate.</p>
+    </div>
+  </div>
+</section>
+
+<section id="apply" aria-labelledby="apply-h">
+  <h2 id="apply-h">Ask about a spot</h2>
+  <p class="sec-sub">No payment is taken on this site. We'll reply by email.</p>
+  <form class="form" id="feat-form" novalidate>
+    <label>Your name<input name="name" id="f-name" required autocomplete="name"></label>
+    <label>Email<input type="email" name="email" id="f-email" required autocomplete="email"></label>
+    <label>Tool name<input name="tool" id="f-tool" required></label>
+    <label>Tool URL<input type="url" name="url" id="f-url" required placeholder="https://"></label>
+    <label>Message <span style="font-weight:400;color:var(--mut)">(optional: category, what makes it great)</span><textarea name="message" id="f-msg"></textarea></label>
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+    <button class="btn" id="f-btn" type="submit" style="justify-self:start">Send enquiry</button>
+    <p class="msg" id="f-status" role="status" aria-live="polite" style="margin:0"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="row">
+    <span>© 2026 BotAtlas · Free directory · Waitlist open</span>
+    <span><a href="./">Directory</a> · <a href="./#waitlist-email">Join waitlist</a></span>
+  </div>
+  <p class="disc">Affiliate disclosure: some tool links on BotAtlas may be affiliate links. If you sign up through one, BotAtlas may earn a commission at no extra cost to you. It never changes which tools we list or how we describe them. Featured placements are always labelled.</p>
+</footer>
+</div>
+<script>
+(function () {
+  var ENDPOINT = 'https://formsubmit.co/ajax/tychalloner@gmail.com';
+  var f = document.getElementById('feat-form'), btn = document.getElementById('f-btn'), st = document.getElementById('f-status');
+  function v(id) { return (document.getElementById(id).value || '').trim(); }
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    st.classList.remove('err'); st.textContent = '';
+    var data = { name: v('f-name'), email: v('f-email'), tool: v('f-tool'), url: v('f-url'), message: v('f-msg') };
+    var bad = !data.name ? 'f-name' : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) ? 'f-email' : !data.tool ? 'f-tool' : !/^https?:\/\/\S+\.\S+/.test(data.url) ? 'f-url' : '';
+    if (bad) { st.classList.add('err'); st.textContent = 'Please fill in your name, a valid email, the tool name and a URL starting with https://'; document.getElementById(bad).focus(); return; }
+    if (f._honey.value) return;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    data._subject = 'BotAtlas featured enquiry: ' + data.tool;
+    data._captcha = 'false';
+    data._template = 'table';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json().catch(function () { return {}; }); })
+      .then(function () { st.textContent = "Thanks! We got it and will reply by email soon."; f.reset(); })
+      .catch(function () { st.classList.add('err'); st.textContent = "Couldn't send right now. Email tychalloner@gmail.com instead."; })
+      .finally(function () { btn.disabled = false; btn.textContent = 'Send enquiry'; });
+  });
+})();
+</script>
+</body>
+</html>
